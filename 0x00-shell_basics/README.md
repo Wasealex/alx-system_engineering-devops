@@ -17,3 +17,4 @@ this project is about basic shell commands used
 		    the parent of the working directory and
 		    the /boot directory (in this order), in long format.(. .. /boot
 12-file_type is used to look what kind of file it is (type)
+13-symbolic_link creates a short cut alias for given target file(ln)
