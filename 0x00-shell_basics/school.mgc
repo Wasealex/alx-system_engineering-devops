@@ -1,10 +1,2 @@
-$ cat input
-SCHOOLfnord
-$ cat magic
-0 string SCHOOL School data
-!:mime School
-$ file --magic-file=magic input
-input: School data
-$ file --magic-file=magic --compile
-$ file --magic-file=magic.mgc input
-input: School data
+0 string SCHOOL school data file
+!:mime school
