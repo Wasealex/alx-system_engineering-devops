@@ -11,3 +11,4 @@ this project is about basic shell commands used
 7-movethatfile is used to move a directory or a file (mv)
 8-firstdelete is used to delete a file or directory(rm)
 9-firstdirdeletion is used to delet a directory(rmdir)
+10-back is used to change to previous directory(..)
