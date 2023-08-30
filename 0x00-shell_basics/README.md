@@ -15,4 +15,5 @@ this project is about basic shell commands used
 11-lists is used to list all files which are normally hidden
 		    in the current directory and
 		    the parent of the working directory and
-		    the /boot directory (in this order), in long format.(. .. /boot)
+		    the /boot directory (in this order), in long format.(. .. /boot
+12-file_type is used to look what kind of file it is (type)
