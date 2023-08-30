@@ -6,4 +6,5 @@ this project is about basic shell commands used
 4-listmorefiles is used to list in long format including hidden files(-la)
 5-listfilesdigitonly is used to list in a current working directory with
 		     Long format with user and group IDs displayed numerically
-		     And hidden files (starting with .)
+		     And hidden files (starting with .)(-lna)
+6-firstdirectory is used to creat directories (mkdir)
