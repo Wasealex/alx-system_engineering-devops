@@ -8,3 +8,4 @@ this project is about basic shell commands used
 		     Long format with user and group IDs displayed numerically
 		     And hidden files (starting with .)(-lna)
 6-firstdirectory is used to creat directories (mkdir)
+7-movethatfile is used to move a directory or a file (mv)
