@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -flaS ./ ../ /boot
+ls -fna ./ ../ /boot
