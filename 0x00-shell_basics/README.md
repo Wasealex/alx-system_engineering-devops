@@ -18,3 +18,4 @@ this project is about basic shell commands used
 		    the /boot directory (in this order), in long format.(. .. /boot
 12-file_type is used to look what kind of file it is (type)
 13-symbolic_link creates a short cut alias for given target file(ln)
+14-copy_html is used to copy file from current to parrent directory (cp)
