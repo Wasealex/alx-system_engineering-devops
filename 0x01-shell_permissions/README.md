@@ -6,4 +6,4 @@ this project is about shell permissions, ownership, group, users will present as
 4-empty create an empty file(touch)
 5-execute adds execute permission to owner of a file(744)
 6-multiple_permissions adds execute permission to owner and group, read permission to user of a file (754)
-7-everybody adds excute permission to owner, group, users(777)
+7-everybody adds excute permission to owner, group, users(711)
