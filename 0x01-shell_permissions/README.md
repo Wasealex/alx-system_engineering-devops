@@ -5,3 +5,4 @@ this project is about shell permissions, ownership, group, users will present as
 3-new_owner changes owner of file to a given user(chown)
 4-empty create an empty file(touch)
 5-execute adds execute permission to owner of a file(744)
+6-multiple_permissions adds execute permission to owner and group, read permission to user of a file (774)
