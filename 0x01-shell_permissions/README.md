@@ -10,4 +10,5 @@ this project is about shell permissions, ownership, group, users will present as
 8-James_Bond set all permissions only to other users(007)
 9-John_Doe set permission as given -rwxr-x-wx (753)
 10-mirror_permissions copy sets of mode of a file as another file(reference)
-11-directories_permissions create execute permission to subdirrectories but not regular files(u+X)
+11-directories_permissions create execute permission to subdirrectories but not regular files(-R a+X)
+12-directory_permissions creating a directory with a permission on the same line (-m)
