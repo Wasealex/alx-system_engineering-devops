@@ -9,3 +9,4 @@ this project is about shell permissions, ownership, group, users will present as
 7-everybody adds excute permission to owner, group, users(a+x)
 8-James_Bond set all permissions only to other users(007)
 9-John_Doe set permission as given -rwxr-x-wx (753)
+10-mirror_permissions copy sets of mode of a file as another file(reference)
