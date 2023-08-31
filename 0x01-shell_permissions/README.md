@@ -12,3 +12,4 @@ this project is about shell permissions, ownership, group, users will present as
 10-mirror_permissions copy sets of mode of a file as another file(reference)
 11-directories_permissions create execute permission to subdirrectories but not regular files(-R a+X)
 12-directory_permissions creating a directory with a permission on the same line (-m)
+13-change_group changing group owner of a given file(chgrp)
