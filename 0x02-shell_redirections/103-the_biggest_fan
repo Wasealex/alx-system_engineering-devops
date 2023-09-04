@@ -1,0 +1,2 @@
+#!/bin/bash
+sort -n -t $'\t' -k 6 | tac | cut -f1 -d $'\t' | head -n 11
