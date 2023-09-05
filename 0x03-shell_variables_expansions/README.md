@@ -1,0 +1,1 @@
+this is a last project in shell discussing on init, variables, alias, expansion, arthemetics 
