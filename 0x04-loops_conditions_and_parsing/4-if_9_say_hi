@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#this script display "Best school" 10 times but except for line 9 display "Hi"
+count=0
+
+while [ $count -lt 10 ]; do
+    echo "Best School"
+    if [ $count -eq 8 ]; then
+	echo "Hi"
+    fi
+    count=$((count+1))
+done
