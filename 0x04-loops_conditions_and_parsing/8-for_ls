@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#has same funtion as ls
+LS="$(ls)"
+for l in $LS; do
+    echo "$l" | cut -d '-' -f2
+done
