@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # display 'To infinity and beyond' indefinitely after sleep 2
 # display 'I am invincible' when SIGTERM recieved
+count=1
 trap 'echo "I am invincible!!!"; exit' SIGTERM
-while [ 1 ]; do
+while [ $count ]; do
     echo "To infinity and beyond"
     sleep 2
 done
