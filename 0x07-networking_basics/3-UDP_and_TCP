@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-#answer of a question about UDP and TCP
-echo '1'
-echo '2'
-echo '1'
+1
+2
+1

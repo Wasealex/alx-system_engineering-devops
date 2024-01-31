@@ -1,4 +1,2 @@
-#!/usr/bin/env bash
-#answer of a question about MAC and IP
-echo '2'
-echo '3'
+2
+1
