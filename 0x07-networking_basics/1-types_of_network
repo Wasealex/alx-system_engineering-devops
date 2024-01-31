@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#answer of a question about OSI
+#answer of a question about types of network
 echo '3'
 echo '2'
 echo '1'
