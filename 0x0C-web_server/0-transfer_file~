@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#transfer a file from our client to a server
+#accepts 4 parameters
