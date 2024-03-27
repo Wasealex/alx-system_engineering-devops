@@ -1,7 +1,11 @@
 #autoamtically install nginx
 
-package { 'nginx install':
-  ensure => installed,
+package { 'nginx':
+  provider => 'apt',
+}
+
+file {'/var/www/html/index.html':
+  content => 'Hello World',
 }
 
 file_line {'redirect':
@@ -11,11 +15,6 @@ file_line {'redirect':
   line   => 'rewrite ^/redirect_me https://www.trashloop.com permanent;',
 }
 
-file {'/var/www/html/index.html':
-  content => 'Hello World',
-}
-
-service {'nginx':
-  ensure  => running,
-  require => Package['nginx'],
+exec {'start_server':
+  command => '/usr/bin/sudo /usr/sbin/service nginx start',
 }
