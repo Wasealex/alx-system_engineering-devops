@@ -1,20 +1,34 @@
 #autoamtically install nginx
-
+# Install Nginx package
 package { 'nginx':
-  provider => 'apt',
+  ensure => installed,
 }
 
-file {'/var/www/html/index.html':
-  content => 'Hello World',
+# Configure Nginx
+file { '/etc/nginx/sites-available/default':
+  ensure => file,
+  content => '
+    server {
+      listen 80 default_server;
+      listen [::]:80 default_server;
+
+      root /var/www/html;
+      index index.html;
+
+      location / {
+        return 200 "Hello World!";
+      }
+
+      location = /redirect_me {
+        return 301 http://trushloop.com/;
+      }
+    }
+  ',
+  notify => Service['nginx'],
 }
 
-file_line {'redirect':
-  ensure => 'present',
-  path   => '/etc/nginx/sites-enabled/default',
-  after  => 'listen 80 deault_server;',
-  line   => 'rewrite ^/redirect_me https://www.trashloop.com permanent;',
-}
-
-exec {'start_server':
-  command => '/usr/bin/sudo /usr/sbin/service nginx start',
+# Enable and start Nginx service
+service { 'nginx':
+  ensure => running,
+  enable => true,
 }
