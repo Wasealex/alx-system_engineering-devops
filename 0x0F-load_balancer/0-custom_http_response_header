@@ -1,11 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/env bash
 #Configure Nginx that HTTP response contains a custom header
 #The name of the custom HTTP header is 'X-Served-By hostname' of the server
+custom="add_header X-Served-By $HOSTNAME;"
 
-custom_header="add_server X-Server-By $HOSTNAME"
-
-sudo sed -i "s/listen 80 default_server;/$custom_header/" /etc/nginx/sites-enabled/default
+sudo sed -i "/server_name _/a $custom" /etc/nginx/sites-enabled/default
 
 sudo nginx -t
-
-sudo service nginx restart
