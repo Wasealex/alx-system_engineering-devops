@@ -5,17 +5,18 @@
 #Makes sure that HAproxy can be managed via an init script
 sudo apt-get update
 sudo apt-get -y install haproxy
-roundrobin="frontend  frontend_dewa
-        bind *:80
-        mode http
-        default_backend backend_dewa
+roundrobin=\
+"frontend  frontend_dewa
+	   bind *:80
+           mode http
+           default_backend backend_dewa
 
 backend backend_dewa
         balance roundrobin
         server 40896-web-01 54.237.13.137:80 check
         server 40896-web-02 54.87.235.212:80 check"
 
-echo "$roundrobin" | sudo tee -a etc/haproxy/haproxy.cfg
+echo "$roundrobin" | sudo tee -a /etc/haproxy/haproxy.cfg
 
 echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 
