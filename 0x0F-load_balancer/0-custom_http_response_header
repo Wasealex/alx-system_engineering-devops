@@ -2,7 +2,7 @@
 #Configure Nginx that HTTP response contains a custom header
 #The name of the custom HTTP header is 'X-Served-By hostname' of the server
 
-custom_header="add_server x-Server-By $HOSTNAME"
+custom_header="add_server X-Server-By $HOSTNAME"
 
 sudo sed -i "s/listen 80 default_server;/$custom_header/" /etc/nginx/sites-enabled/default
 
