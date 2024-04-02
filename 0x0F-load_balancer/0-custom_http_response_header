@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #Configure Nginx that HTTP response contains a custom header
 #The name of the custom HTTP header is 'X-Served-By hostname' of the server
 
