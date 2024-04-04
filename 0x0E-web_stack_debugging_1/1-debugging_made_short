@@ -2,4 +2,4 @@
 #installing ngnix and starting
 sudo apt-get update
 apt-get install -y nginx
-sudo rm /run/nginx.pid
+sudo stop nginx
