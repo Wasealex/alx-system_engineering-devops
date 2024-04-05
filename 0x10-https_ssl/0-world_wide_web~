@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# script must accept 2 arguments:
+#  	 domain:
+#		type: string
+#		what: domain name to audit
+#		mandatory: yes
+#	 subdomain:
+#		type: string
+#		what: specific subdomain to audit
+#		mandatory: no
+#Output: The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]
