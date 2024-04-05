@@ -10,7 +10,7 @@
 #		mandatory: no
 #Output: The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]
 print_all() {
-    dig "$1" | grep -A1 'ANSWER SECTION:' | sed -r "s/$1\./$2/g" | awk -F" " ' NR==2 { print "The subdomain " $1 " is a " $4 " record and points to " $5" }'
+    dig "$1" | grep -A1 'ANSWER SECTION:' | sed -r "s/$1./$2/g" | awk -F" " ' NR==2 { print "The subdomain " $1 " is a " $4 " record and points to " $5" }'
 }
 
 if [ "$#" -eq 2 ]
