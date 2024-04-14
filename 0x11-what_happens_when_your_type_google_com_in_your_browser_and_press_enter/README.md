@@ -1,0 +1,1 @@
+detail explaination when writing what happens when you write www.google.com
