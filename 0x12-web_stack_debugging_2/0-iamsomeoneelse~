@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# accepts one argument, run the whoami command under the user passed as an argument
+
+whoami
