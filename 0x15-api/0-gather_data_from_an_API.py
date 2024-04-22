@@ -23,10 +23,10 @@ if __name__ == "__main__":
     todos_url = f"{url}/todos?userId={employee_id}"
     todos_response = requests.get(todos_url)
     todos_data = todos_response.json()
-    total_tasks = len(todos_data)
-    completed_tasks = sum(1 for todo in todos_data if todo["completed"])
+    total_t = len(todos_data)
+    comp_t = sum(1 for todo in todos_data if todo["completed"])
 
-    print(f"Employee {employee_name} is done with tasks ({completed_tasks}/{total_tasks}):")
+    print(f"Employee {employee_name} is done with tasks ({comp_t}/{total_t}):")
     for todo in todos_data:
         if todo["completed"]:
             print(f"\t{todo['title']}")
