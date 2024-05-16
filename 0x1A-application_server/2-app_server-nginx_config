@@ -1,0 +1,11 @@
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    root /var/www/html;
+    server_name dewainfo.tech;
+    add_header X-Served-By "40896-web-01";
+
+    location /airbnb-onepage/ {
+        proxy_pass http://localhost:5000/airbnb-onepage/;
+    }
+}
