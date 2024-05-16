@@ -1,0 +1,17 @@
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	
+	server_name 54.237.13.137;
+	
+	add_header X-Served-By "40896-web-01";
+	
+	location /airbnb-onepage/ {
+		proxy_pass http://localhost:5000/airbnb-onepage/;
+	}	
+	
+	location ~ /airbnb-dynamic/number_odd_or_even/(?<number>\d+) {
+		proxy_pass http://localhost:5001/number_odd_or_even/$number;
+	
+	}
+}
